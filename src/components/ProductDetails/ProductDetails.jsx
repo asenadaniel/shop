@@ -51,7 +51,7 @@ function ProductDetails() {
   return (
     <div className="bg-cover ">
 
-      <div className="flex xl:py-[4%] py-[10%] md:px-[26%] px-[3%] flex-col background relative">
+      <div className="flex xl:py-[4%] py-[10%] md:px-[26%]  flex-col bg-green-100 md:background relative">
         <div className='xl:px-[16%] flex flex-col gap-9 bg  bg-green-100  px-[6%] py-[9%] xl:py-[12%] '>
           <h1 className=' text-4xl text-center'>Product</h1>
           <div className=' flex justify-between items-center'>
