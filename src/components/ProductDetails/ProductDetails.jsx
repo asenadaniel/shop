@@ -4,7 +4,9 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { ArrowBack, ShoppingCart } from '@mui/icons-material';
 import { ProductContext } from '../../Context/productContext';
 import Footer from '../Footer/Footer';
-import './productDetails.css'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './productDetails.css';
 
 function ProductDetails() {
   const { id } = useParams();
@@ -35,6 +37,7 @@ function ProductDetails() {
 
   const handleAddToCart = () => {
     addToCart(product, quantity);
+    toast.success(`${quantity} item(s) added to cart!`);
   };
 
   const incrementQuantity = () => setQuantity(prev => prev + 1);
@@ -101,6 +104,7 @@ function ProductDetails() {
 
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

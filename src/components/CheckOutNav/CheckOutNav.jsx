@@ -1,6 +1,7 @@
 import { CancelOutlined, ShoppingCart } from '@mui/icons-material'
 import React, { useContext } from 'react'
 import { ProductContext } from '../../Context/productContext';
+import { Link } from 'react-router-dom';
 
 function CheckOutNav() {
   const { cart } = useContext(ProductContext);
@@ -22,7 +23,9 @@ function CheckOutNav() {
             </div>}
           </div>
           <div>
-            <CancelOutlined />
+            <Link to={'/'}>
+              <CancelOutlined />
+            </Link>
           </div>
         </div>
       </div>
