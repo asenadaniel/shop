@@ -19,8 +19,8 @@ function MobileNav() {
 
       </div>
       <div className=' flex items-center gap-6 text-green-900 pr-2'>
-        <Search />
         <Link to={'/checkout'} className=' flex' >
+          <Search />
           <ShoppingCartOutlined />
           {cartItemCount > 0 && <div className=' min-w-[15px] min-h-4 mr-[20px] right-[87px] top rounded-full bg-red-900  '>
 
