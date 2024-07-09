@@ -1,9 +1,13 @@
 import { ArrowDropDown, LocationOn, Search, ShoppingCartOutlined } from '@mui/icons-material'
-import React from 'react'
+import React, { useContext } from 'react'
 import MobileNav from '../MobileNav/MobileNav'
 import { Link } from 'react-router-dom'
+import { ProductContext } from '../../Context/productContext';
 
 function Navbar() {
+  const { cart } = useContext(ProductContext);
+  const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <div className=' px-[4%] py-[1%] w-full'>
       <div className=' xl:flex w-full gap-10 justify-between items-center hidden'>
@@ -17,10 +21,14 @@ function Navbar() {
         <div className=' text-green-900'>
           <LocationOn />
           <ArrowDropDown />
-          <Link to={'/checkout'}>
-            <ShoppingCartOutlined />
-          </Link>
+
         </div>
+        <Link to={'/checkout'} className=' flex'>
+          <ShoppingCartOutlined />
+          {cartItemCount > 0 && <div className=' min-w-[15px] min-h-4 mr-[20px] right-[87px] top rounded-full bg-red-900  '>
+
+          </div>}
+        </Link>
         <div className=' flex gap-[15px]'>
           <p className=' border-[2px] flex border-solid border-green-950 px-8 py-3 rounded-md font-medium'>SIGN IN</p>
           <p className=' border flex border-solid border-green-950 px-8 py-3 rounded-md bg-green-900 text-white '>SIGN UP</p>
