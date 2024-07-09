@@ -85,13 +85,13 @@ function ProductDetails() {
           </div>
         </div>
 
-        <div className='flex w-full justify-between'>
+        <div className='flex w-full justify-between '>
           <div className='flex justify-center items-center'>
-            <button className='font-semibold bg-green-300 xl:px-7 px-5 py-3 rounded-bl-xl' onClick={decrementQuantity}>-</button>
+            <button className='font-semibold bg-green-300 xl:px-7 px-4 py-3 rounded-bl-xl' onClick={decrementQuantity}>-</button>
             <p className='text-[#B2FBD2] bg-green-800 xl:px-7 px-5 py-3'>{quantity}</p>
-            <button className='font-semibold bg-green-300 px-5    xl:px-7 py-3 rounded-br-xl' onClick={incrementQuantity}>+</button>
+            <button className='font-semibold bg-green-300 px-4    xl:px-7 py-3 rounded-br-xl' onClick={incrementQuantity}>+</button>
           </div>
-          <button className='bg-green-900 xl:px-7 px-5 rounded-br-xl rounded-bl-xl py-3 text-white' onClick={handleAddToCart}>Add {quantity} item(s) to cart</button>
+          <button className='bg-green-900 xl:px-7 px-3 rounded-br-xl rounded-bl-xl py-1 text-white' onClick={handleAddToCart}>Add {quantity} item(s) to cart</button>
         </div>
       </div>
     </div>
