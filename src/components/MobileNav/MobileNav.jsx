@@ -28,7 +28,7 @@ function MobileNav() {
 
       {open && <div className=' bg-white h-[100vh] absolute top-[9px] z-20 right-[80px] w-[80%]'>
         <div className=' flex justify-between px-[10%] py-[10%] items-center'>
-          .
+          <p></p>
           <div onClick={() => setOpen(!open)}>
             <img src="./cancel.png" alt="" />
           </div>
