@@ -20,7 +20,7 @@ function ProductCard({ name, img, price }) {
           <p className=' font-bold'>{name}</p>
           <p>{price}NGN</p>
         </div>
-        <button className=' bg-green-900 w-[80%] h-[35px] xl:h-[53px] text-[13px] xl:text-[17px] text-white' onClick={handleAddToCart}>ADD TO CART</button>
+        <button className=' bg-green-900 w-[80%] h-[35px] xl:h-[53px] text-[13px] xl:text-[17px] rounded-b-xl  text-white' onClick={handleAddToCart}>ADD TO CART</button>
       </div>
     </div>
   )

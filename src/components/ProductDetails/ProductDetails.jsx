@@ -4,6 +4,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { ArrowBack, ShoppingCart } from '@mui/icons-material';
 import { ProductContext } from '../../Context/productContext';
 import Footer from '../Footer/Footer';
+import './productDetails.css'
 
 function ProductDetails() {
   const { id } = useParams();
@@ -48,10 +49,10 @@ function ProductDetails() {
   };
 
   return (
-    <div>
+    <div className="bg-cover ">
 
-      <div className="flex xl:py-[4%] py-[10%] md:px-[26%] px-[7%] flex-col bg-green-100 relative">
-        <div className='xl:px-[16%] flex flex-col gap-9'>
+      <div className="flex xl:py-[4%] py-[10%] md:px-[26%] px-[3%] flex-col background relative">
+        <div className='xl:px-[16%] flex flex-col gap-9 bg  bg-green-100  px-[6%] py-[9%] xl:py-[12%] '>
           <h1 className=' text-4xl text-center'>Product</h1>
           <div className=' flex justify-between items-center'>
             <Link to={'/'}>

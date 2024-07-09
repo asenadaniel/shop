@@ -18,10 +18,13 @@ function MobileNav() {
         <img src="./logo.png" alt="" className=' w-[100px]' />
 
       </div>
-      <div className=' flex items-center gap-6 text-green-900'>
+      <div className=' flex items-center gap-6 text-green-900 pr-2'>
         <Search />
-        <Link to={'/checkout'} >
+        <Link to={'/checkout'} className=' flex' >
           <ShoppingCartOutlined />
+          {cartItemCount > 0 && <div className=' absolute min-w-[15px] min-h-4 mr-[20px] right-[87px] top rounded-full bg-red-900  '>
+
+          </div>}
         </Link>
       </div>
       <p className=' bg-green-900 px-3 py-1 text-white rounded-md' >SIGN IN</p>
