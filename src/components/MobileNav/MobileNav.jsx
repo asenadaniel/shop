@@ -58,7 +58,7 @@ function MobileNav() {
 
           <div className=' border-b-2 border-green-700'>
             <div className=' px-[8%] flex justify-between'>
-              <p className=' font-semibold text-[20px]'>Loaction</p>
+              <p className=' font-semibold text-[20px]'>Location</p>
               <div className=' text-green-900'><PlaceOutlined /></div>
             </div>
 
